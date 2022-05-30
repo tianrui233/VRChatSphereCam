@@ -1,47 +1,47 @@
-## 它能实现怎样的功能？
-它可以让你在VRChat中录制360度的全景视频
+## What kind of function can it achieve?
+It allows you to record 360 degree panoramic video in VRChat
  
-## 什么原理？
-正方体有6个面，所以它有6个摄像头分别用来获取不同方向的画面然后通过shader合到一起~
+## What principle?
+The cube has 6 faces, so it has 6 cameras to obtain images in different directions and then combine them together through the shader~
  
-## 它会给我和其他玩家带来什么影响？
-只要离得不是太近就没有问题...毕竟它是个shader，离近了就是“糊脸shader”
-除此之外没啥负面影响了，尽情体验吧~
+## How will it affect me and other players?  
+It's fine as long as it's not too close... After all, it's a shader, and if it's too close, it's a "blush-faced shader"  
+Other than that, there is no negative impact, just enjoy it~  
 
-## 我要怎么把它加到我的avatar里？
-很简单，在[releases](https://github.com/tianrui233/VRChatSphereCam/releases)里下载*.unitypackage，导入后按照常规的方法把它当作可固定在世界位置的avatar道具处理即可
+## How do I add it to my avatar?
+It's very simple, download *.unitypackage in [releases](https://github.com/tianrui233/VRChatSphereCam/releases), after importing, just drag "TrackingPoint" to the place you want to control the position and reset it to zero, and Add animation controllers and custom menus  
  
-## 在游戏里要怎么操作？
-通过圆盘开关控制，先打开“全景相机”把立方体移动到你想要放置的位置之后打开“位置锁定”开关
-![GIF动图](https://user-images.githubusercontent.com/37788769/162582757-9f89afaf-72f7-4e92-96bb-81104072732e.gif)
+## How to operate in the game?
+Controlled by the disc switch, first turn on the "panoramic camera", move the cube to the position you want to place, and then turn on the "position lock" switch  
+![GIF动图](https://user-images.githubusercontent.com/37788769/162582757-9f89afaf-72f7-4e92-96bb-81104072732e.gif)  
 
-然后打开vrchat官方的直播相机，并且把摄像头的位置修改为世界位置（world）
-并把它塞到立方体里
+Then open the official streaming camera of vrchat and change the position of the camera to the world position (world)
+and stuff it into the cube  
 ![GIF动图](https://user-images.githubusercontent.com/37788769/162582699-d842f321-41c4-4fee-b2a4-fa6f4e63095b.gif)  
-立方体内部是透明的，所以不会被遮挡。在这之后，打开电脑上的屏幕录制工具录制全景视频吧~  
+The inside of the cube is transparent, so it won't be occluded. After that, open the screen recording tool on your computer to record a panoramic video~  
  
-推荐使用显卡配套的程序录制视频，可以节省不少性能开销，4k分辨率建议把码率设置在50000kbp/s
-## 我没有虚拟现实（VR）设备，直接用PC玩无法打开相机，我也能录制全景视频吗？
-可以的，不过..录制视频和玩游戏只能二选一了（[整个屏幕都是平铺的360°全景图像](https://www.bilibili.com/video/BV1jY4y1e71o/?spm_id_from=333.788.recommend_more_video.0)）
-
-ps：我认为当前版本最好的方式就是用另外一个VRChat账号录制全景视频，并把全景摄像头绑定到body上，这样你就有了一个可随时移动的同时还能录制的全景摄像头  
-（毕竟这个实现方法是把VRChat的摄像头塞到shader里面，VR模式除非你同时控制VRChat摄像头和全景摄像头...）  
-（不知道有没有可以直接顶掉官方相机的办法..有的话可就更方便了...）  
-## 还有什么需要注意的吗？
-### 清 晰 度 ！
-①录制的清晰度取决于你电脑显示的分辨率大小（可以超分辨率），我就是用2k显示器录制的4k视频
-![截图（加载不出来就算了）这个也不是很重要](https://img.gejiba.com/images/ac40e42b63a9eff422cea9cbccd6d7ad.png)
-通常情况下在显卡驱动程序里面有相关设置，别调太高，不然硬件设备也会吃不消  
-
-②除此之外还需要在unity里修改前、后、左、右、上、下这六个面的分辨率  
+It is recommended to use the program supporting the graphics card to record video, which can save a lot of performance overhead. It is recommended to set the bit rate to 50000kbp/s for 4k resolution
+## I don't have a virtual reality (VR) device, and I can't open the camera when I play directly on the PC. Can I also record panoramic videos?
+Yes, but.. you can only choose between recording video and playing games, because then the entire screen will be a tiled 360° panorama..  
+ 
+## Anything else to watch out for?
+### Clarity!
+①The resolution of the recording depends on the resolution displayed by your computer (it can be super-resolution), I just recorded a 4k video with a 2k monitor  
+![截图](https://img.gejiba.com/images/ac40e42b63a9eff422cea9cbccd6d7ad.png)  
+Usually, there are related settings in the graphics card driver, don't adjust it too high, otherwise the hardware device will be overwhelmed.  
+  
+②In addition, it is necessary to modify the resolution of the front, rear, left, right, upper and lower surfaces in unity    
 ![我用的4096的清晰度..3070ti有点吃力了](https://s1.ax1x.com/2022/04/10/LFwD6P.png)
 ****
-## 详细的视频教程已在[bilibili@欧阳大鸽子](https://www.bilibili.com/video/BV1bS4y127gC)发布！目前暂时没有写图文教程的打算，视频讲的很详细了
+## Related tutorials can be found at [Github Wiki](https://github.com/tianrui233/VRChatSphereCam/wiki)
+### ↓This tutorial is outdated, it is only for [v0.4beta](https://github.com/tianrui233/VRChatSphereCam/releases/tag/v0.4-beta)!
+#### ~~Detailed video tutorials are available at [bilibili@欧阳大鸽子](https://www.bilibili.com/video/BV1bS4y127gC) release! At present, there is no plan to write a graphic tutorial. The video is very detailed.~~ 
 ****
-##TODO list:  
-✅在当前世界内可移动可固定全景相机的位置  
-✅更直观的确认主视角的位置（立方体）  
-✅减小受影响范围（但还是不要离得太近，会触发糊脸buff  
-☑️立体声适配  
-☑️隐藏UI  
-☑️其他控制方式  
+## TODO list:  
+✅Moveable and fixed panorama camera position in the current world  
+✅More intuitive confirmation of the position of the main viewing angle (cube)  
+✅Reduce the affected area (but don't get too close, it will trigger the blush buff  
+✅ Simplify the append process  
+☑️Stereo adaptation  
+☑️Hide UI  
+☑️Other control methods  
