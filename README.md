@@ -1,5 +1,7 @@
 ## What kind of function can it achieve?
 It allows you to record 360 degree panoramic video in VRChat
+[![Click to jump to youtube to view the demo](https://user-images.githubusercontent.com/37788769/170998293-42d3017d-76f5-420b-9be6-f4cc47fb6d69.png)](https://www.youtube.com/watch?v=0zAOoxdIGN8)
+
  
 ## What principle?
 The cube has 6 faces, so it has 6 cameras to obtain images in different directions and then combine them together through the shader~
